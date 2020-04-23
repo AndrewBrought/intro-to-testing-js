@@ -12,5 +12,5 @@ function isNumeric(input) {
 }
 
 function sayHello() {
-
+    return "";
 }
