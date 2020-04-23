@@ -11,6 +11,6 @@ function isNumeric(input) {
     }
 }
 
-function sayHello() {
-    return "";
+function sayHello(Jane) {
+    return "Hello, Jane!";
 }

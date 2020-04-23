@@ -24,7 +24,7 @@ describe("isNumeric", function() {
     it("should return true when passed the number 5", function () {
         expect(isNumeric(5)).toBe(true);
     });
-    it("should return false when passed thre string 'Jim Henson", function () {
+    it("should return false when passed the string 'Jim Henson'", function () {
         expect(isNumeric("Jim Henson")).toBe(false);
     });
     it("should return false when passed the array of [1,2,3]", function () {
@@ -44,6 +44,9 @@ describe('sayHello', function() {
     });
     it("should return a string when called", function () {
         expect(typeof sayHello()).toBe("string");
+    });
+    it('should return the string "Hello, Jane!" when executed', function () {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
 });
 
