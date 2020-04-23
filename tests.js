@@ -13,3 +13,34 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+describe('isNumeric', function() {
+    it('should be a defined function', function () {
+        expect(typeof isNumeric).toBe('function');
+    });
+    it('should be a defined function', function() {
+        expect(typeof isNumeric()).toBe("boolean");
+    });
+    it('should return true when passed the number 5', function () {
+        expect(isNumeric(5)).toBe(true);
+    });
+    it("should return false when passed thre string 'Jim Henson", function () {
+        expect(isNumeric("Jim Henson")).toBe(false);
+    });
+    it("should return false when passed the array of [1,2,3]", function () {
+        expect(isNumeric([1,2,3])).toBe(false);
+    });
+    it('should return false when passed an object', function () {
+        expect(isNumeric({name: "Carole Baskin", occupation: "Big Cat Enthusiast"})).toBe(false);
+    });
+    it('should return false when passed no arguments', function () {
+        expect(isNumeric()).toBe(false);
+    });
+});
+
+describe('sayHello', function() {
+    it('should be a defined function', function () {
+        expect(typeof sayHello).toBe('function');
+    });
+});
+
