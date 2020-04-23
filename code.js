@@ -12,7 +12,11 @@ function isNumeric(input) {
 }
 
 function sayHello(input) {
-   return "Hello, " + input + " !";
+   if(input === undefined || typeof input === "boolean"){
+       return "Hello, World!";
+   } else {
+       return "Hello, " + input + "!";
+   }
 }
 
 

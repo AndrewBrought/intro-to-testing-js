@@ -45,9 +45,20 @@ describe('sayHello', function() {
     it("should return a string when called", function () {
         expect(typeof sayHello()).toBe("string");
     });
-    it('should return "Hello, " + input + " !"', function () {
-        expect(sayHello("input")).toBe("Hello, " + 'input' + " !" );
+    it('should return "Hello, " + input + "!"', function () {
+        expect(sayHello("input")).toBe("Hello, " + "input" + "!" );
     });
-
+    it('should return "Hello, World!"', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed "true"', function (){
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed "false"', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it("should never return 'undefined' when called", function() {
+        expect(sayHello()).not.toBe(undefined);
+    });
 });
 
