@@ -12,8 +12,10 @@ function isNumeric(input) {
 }
 
 function sayHello(input) {
-    if(input === "Alex"){
+    if (input === "Alex") {
         return "Hello, Alex!";
+    } else if (input === "Pat") {
+        return "Hello, Pat!";
     } else {
         return "Hello, Jane!";
     }
