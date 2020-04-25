@@ -57,8 +57,11 @@ describe('sayHello', function() {
     it('should return "Hello, World!" when passed "false"', function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
-    it("should never return 'undefined' when called", function() {
+    it('should never return "undefined" when called', function() {
         expect(sayHello()).not.toBe(undefined);
+    });
+    it('should never return "null" when called', function () {
+        expect(sayHello()).not.toBe(null);
     });
 });
 

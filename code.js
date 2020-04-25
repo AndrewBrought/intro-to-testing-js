@@ -12,9 +12,9 @@ function isNumeric(input) {
 }
 
 function sayHello(input) {
-   if(input === undefined || typeof input === "boolean"){
+   if(input === undefined || typeof input === "boolean" || input == null ){
        return "Hello, World!";
-   } else {
+   }else{
        return "Hello, " + input + "!";
    }
 }
