@@ -12,12 +12,24 @@ function isNumeric(input) {
 }
 
 function sayHello(input) {
-   if(input === undefined || typeof input === "boolean" || input == null ){
-       return "Hello, World!";
-   }else{
+   if(typeof input === "string"){
        return "Hello, " + input + "!";
+   }else{
+      return "Hello, World!"
    }
 }
+// var input;
+function isFive(input) {
+    // input = "5";
+        if(typeof input === 5){
+            return true;
+        } else if(parseFloat(input) === 5){
+            return true;
+        } else {
+            return false
+        }
+}
+
 
 
 
