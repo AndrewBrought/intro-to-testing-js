@@ -105,4 +105,7 @@ describe('isEven', function () {
     it('should return false with boolean input "true"', function () {
         expect(isEven(true)).toBe(false);
     });
+    it('should return "false" when called "undefined"', function() {
+        expect(isEven()).toBe(false);
+    });
 });

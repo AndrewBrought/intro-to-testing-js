@@ -28,13 +28,20 @@ function isFive(input) {
         }
 }
 
+// function isEven(input) {
+//     if(input === 2 || input === -4 || input === "8"){
+//         return true;
+//     } else if(input === 3 || input === "banana" || input === Infinity || input === true || input === false){
+//         return false;
+//     } else if(isEven() === true){
+//         return false;
+//     }
+// }
+
 function isEven(input) {
-    if(input === 2 || input === -4 || input === "8"){
-        return true;
-    } else if(input === 3 || input === "banana" || input === Infinity || input === true || input === false){
-        return false;
-    }
+    return parseFloat(input) % 2 === 0;
 }
+
 
 
 
