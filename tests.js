@@ -109,3 +109,9 @@ describe('isEven', function () {
         expect(isEven()).toBe(false);
     });
 });
+
+describe('isVowel', function () {
+    it('should be a function', function () {
+        expect(typeof isVowel).toBe("function");
+    });
+});
