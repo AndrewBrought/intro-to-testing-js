@@ -77,13 +77,17 @@ function isVowel(input) {
 //
 // }
 
-// function add(a, b) {
-//     return parseFloat(a) + parseFloat(b);
-// }
+function add(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return isNaN;
+    } else {
+        return Number(parseFloat(a)) + Number(parseFloat(b));
+    }
+}
 // function add(a, b) {
 //         if(a !== isNaN(a) && b !== isNaN(b)){
 //             return a + b;
 //     } else {
 //             return isNaN;
 //         }
-}
+// }
